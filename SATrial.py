@@ -164,7 +164,10 @@ class SATrial(Trial):
             if self.phase == 4:
                 self.phase_4_time = self.session.clock.getTime()
                 if ( self.phase_4_time  - self.phase_3_time ) > self.phase_durations[4]:
-                    self.stopped = True                 # if self.phase == 5:
+                    print self.parameters
+                    self.stopped = True               
+
+                  # if self.phase == 5:
             #     self.phase_5_time = self.session.clock.getTime()
             #     if ( self.phase_5_time  - self.phase_4_time ) > self.phase_durations[5]:
             #         self.stopped = True      

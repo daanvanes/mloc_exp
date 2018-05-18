@@ -37,7 +37,7 @@ class SPSession(EyelinkSession):
         # if fix_sp == 'y':
             # standard_parameters['sp_path_amplitude'] = 0
 
-        screen = self.create_screen( size = DISPSIZE, full_screen =full_screen, physical_screen_distance = SCREENDIST, 
+        screen = self.create_screen( size = DISPSIZE, full_screen =FULLSCREEN, physical_screen_distance = SCREENDIST, 
             background_color = self.background_color, physical_screen_size = SCREENSIZE, wait_blanking = True, screen_nr = 1 )
         event.Mouse(visible=False, win=screen)
 

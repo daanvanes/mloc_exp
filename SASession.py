@@ -34,8 +34,7 @@ class SASession(EyelinkSession):
 		
         self.fix_sp = fix_sp
 
-
-        screen = self.create_screen( size = DISPSIZE, full_screen =full_screen, physical_screen_distance = SCREENDIST, 
+        screen = self.create_screen( size = DISPSIZE, full_screen = FULLSCREEN, physical_screen_distance = SCREENDIST, 
             background_color = self.background_color, physical_screen_size = SCREENSIZE, wait_blanking = True, screen_nr = 1 )
         event.Mouse(visible=False, win=screen)
 

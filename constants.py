@@ -1,6 +1,6 @@
 
-location = 'K2D38'# 'office','laptop','K2D38','7T'
-full_screen = True#lse
+location = 'laptop'# 'office','laptop','K2D38','7T'
+FULLSCREEN = False#lse
 
 # standard parameters
 standard_parameters = {
@@ -86,7 +86,8 @@ elif location == 'office':
 elif location == 'laptop':
    
     #MBP screen
-    DISPSIZE = (1920,1080)#(1280,720)#,1080)#(1024,768)#(1920,1080)
+    DISPSIZE = (1000,1000)
+    # DISPSIZE = (1920,1200)
     SCREENSIZE = (20.71 ,30.72)# guesstimates (height and depth with estimated 1 cm *2 edge space)
     SCREENDIST = 50 # guesstimate centimeters; distance between screen and participant's eyes 
 
